@@ -34,7 +34,7 @@ def deal(choice):
     #hit condition
     if choice == "hit":
         if random.choice(cards) == 11 and sum(user) > 21:
-            user.append(random.choice(cards))
+            user.append(1)
         else:
             user.append(random.choice(cards))
         print("\n")
