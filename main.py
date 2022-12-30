@@ -33,10 +33,11 @@ def get_input():
 def deal(choice):
     #hit condition
     if choice == "hit":
-        if random.choice(cards) == 11 and sum(user) > 21:
+        a = random.choice(cards)
+        if a == 11 and sum(user) > 21:
             user.append(1)
         else:
-            user.append(random.choice(cards))
+            user.append(a)
         print("\n")
         print(f"computer has {computer[0]}")
         print(f"you have {user} \t total = {sum(user)}")
